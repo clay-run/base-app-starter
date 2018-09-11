@@ -1,0 +1,25 @@
+.landing-container {
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+    
+    h1 {
+        font-size: 25px;
+        margin: 30px 0px 10px 0;
+    }
+
+    p {
+        margin: 10px 0;
+    }
+
+    a {
+        color: #2196F3;
+        text-decoration: none;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

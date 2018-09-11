@@ -7,7 +7,9 @@
     "dev": "NODE_ENV=development npm run devServer & npm run nodemon",
     "devServer": "webpack-dev-server --progress --inline --colors --port 8091",
     "nodemon": ". ./config && nodemon server.js --ignore 'node_modules/*' --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ". ./config && DEBUG=base:* babel-node server.js",
+    "build": "sh scripts/build.sh"
   },
   "author": "",
   "license": "ISC",

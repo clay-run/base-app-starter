@@ -1,3 +1,3 @@
 export DEBUG='base:*'
 export JSON_WEB_TOKEN_SECRET='change_to_something_secret'
-export BASE_SECRET_KEY='sk_xxxxxxxxxxxxxx'
+export BASE_SECRET_KEY='sk_bf310318ba648b0114e8'

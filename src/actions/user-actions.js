@@ -25,6 +25,8 @@ export function logIn(email, password) {
             dispatch(push('/home'))
 
             return dispatch({ type: types.USER_LOGIN_REQUEST_SUCCESS, user })
+        }, err => {
+            dispatch({ type: types.USER_LOGIN_REQUEST_FAILURE, error: err.message })
         })
     }
 }

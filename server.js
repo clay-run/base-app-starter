@@ -18,7 +18,7 @@ app.use(compress())
 app.use(helmet())
 app.use(cookieParser())
 
-app.use(parser.json({limit: '50mb'}))
+app.use(parser.json({ limit: '50mb' }))
 app.use(parser.urlencoded({ limit: '50mb', extended: false }))
 
 app.use(morgan('dev'))
@@ -28,6 +28,13 @@ app.use('/v1/*', cors())
 app.use('/v1/*', requestTimer)
 app.use('/v1/*', authHandler)
 app.use('/v1/', apiRoutes)
+
+app.use('/assets', express.static(__dirname + '/build-front'));
+app.use(express.static(__dirname + '/build-front'));
+
+app.use((req, res, next) => {
+    res.sendFile(__dirname + '/build-front/index.html');
+})
 
 app.use(errorHandler)
 
