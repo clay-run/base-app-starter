@@ -1,0 +1,21 @@
+.home-container {
+    padding: 5px 20px;
+
+    p {
+        margin: 15px 0;
+
+        b {
+            font-weight: 600;
+        }
+    }
+
+    a {
+        color: #2196F3;
+        text-decoration: none;
+        cursor: pointer;
+        
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
