@@ -11,6 +11,9 @@
     "start": ". ./config && DEBUG=base:* babel-node server.js",
     "build": "sh scripts/build.sh"
   },
+  "now": {
+    "alias": "base-app-starter"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {

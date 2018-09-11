@@ -12,7 +12,7 @@ export default class LandingContainer extends React.Component {
 
                     <p>This is a starter app for Base.run.</p>
 
-                    <p><Link to='/login'>Log in</Link> or <Link to='/login'>Register</Link></p>
+                    <p><Link to='/login'>Log in</Link> or <Link to='/register'>Register</Link></p>
                 </div>
             </div>
         )

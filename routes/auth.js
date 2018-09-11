@@ -46,7 +46,9 @@ const authAPI = {
         Base.User.register({
             email,
             password
-        }).then(user => {
+        }).then(_user => {
+            let user = _user.values()
+
             delete user.password
 
             user.token = jwt.sign(user, JWT_TOKEN)
